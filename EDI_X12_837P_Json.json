@@ -1,0 +1,431 @@
+ [
+  {
+    "SegmentDelimiter": "~",
+    "DataElementDelimiter": "*",
+    "ISA": {
+      "ISA01": "00",
+      "ISA02": "          ",
+      "ISA03": "00",
+      "ISA04": "          ",
+      "ISA05": "ZZ",
+      "ISA06": "SENDERID4567891",
+      "ISA07": "ZZ",
+      "ISA08": "77034",
+      "ISA09": "210102",
+      "ISA10": "1200",
+      "ISA11": "^",
+      "ISA12": "00501",
+      "ISA13": "00",
+      "ISA14": "0",
+      "ISA15": "T",
+      "ISA16": ":"
+    },
+    "Groups": [
+      {
+        "GS": {
+          "GS01": "HC",
+          "GS02": "SENDERID4567891",
+          "GS03": "77034",
+          "GS04": "20210102",
+          "GS05": "1200",
+          "GS06": "1",
+          "GS07": "X",
+          "GS08": "005010X222A1"
+        },
+        "Transactions-FunctionalGroup": [
+          {
+            "ST": {
+              "ST01": "837",
+              "ST02": "000000001",
+              "ST03": "005010X222A1"
+            },
+            "BHT_BeginningOfHierarchicalTransaction": {
+              "BHT01": "0019",
+              "BHT02": "00",
+              "BHT03": "2223254003792",
+              "BHT04": "20230118",
+              "BHT05": "1200",
+              "BHT06": "CH"
+            },
+            "AllNM1 - SubmitterInformation": {
+              "Loop1000A": {
+                "NM1_SubmitterName": {
+                  "NM101": "41",
+                  "NM102": "2",
+                  "NM103": "PREMIUM BILLING SERVICES",
+                  "NM109": "XX",
+                  "NM110": "123456789"
+                },
+                "PER": [
+                  {
+                    "PER01": "IC",
+                    "PER02": "TOM CRUISE",
+                    "PER03": "TE",
+                    "PER04": "3055552222"
+                  }
+                ]
+              },
+              "Loop1000B": {
+                "NM1_ReceiverName": {
+                  "NM101": "40",
+                  "NM102": "2",
+                  "NM103": "GEORGIA FAMILIES",
+                  "NM108": "46",
+                  "NM109": "77034"
+                }
+              }
+            },
+            "Loop2000A": [
+              {
+                "HL_BillingProviderHierarchicalLevel": {
+                  "HL01": "1",
+                  "HL03": "20",
+                  "HL03": "1"
+                },
+                "PRV_BillingProviderSpecialtyInformation": {
+                  "PRV01": "BI",
+                  "PRV02": "PXC",
+                  "PRV03": "453088947A"
+                },
+                "AllNM1": {
+                  "Loop2010AA": {
+                    "NM1_BillingProviderName": {
+                      "NM101": "85",
+                      "NM102": "2",
+                      "NM103": "LGREEN20",
+                      "NM108": "XX",
+                      "NM109": "9876543210"
+                    },
+                    "N3_BillingProviderAddress": {
+                      "N301": "234 SEAWAY ST"
+                    },
+                    "N4_BillingProviderCity_State_ZIPCode": {
+                      "N401": "MIAMI",
+                      "N402": "FL",
+                      "N403": "33111"
+                    },
+                    "AllREF": {
+                      "REF_BillingProviderTaxIdentification": {
+                        "REF01": "EI",
+                        "REF02": "587654321"
+                      }
+                    }
+                  }
+                },
+                "Loop2000B": [
+                  {
+                    "HL_SubscriberHierarchicalLevel": {
+                      "HL01": "2",
+                      "HL02": "1",
+                      "HL03": "22",
+                      "HL04": "1"
+                    },
+                    "SBR_SubscriberInformation": {
+                      "SBR01": "P",
+                      "SBR03": "2222-SJ",
+                      "SBR09": "CI"
+                    },
+                    "AllNM1": {
+                      "Loop2010BA": {
+                        "NM1_SubscriberName": {
+                          "NM101": "IL",
+                          "NM102": "1",
+                          "NM103": "BRYANT",
+                          "NM104": "AHMED",
+                          "NM108": "MI",
+                          "NM109": "222114962578"
+                        },
+                        "DMG_SubscriberDemographicInformation": {
+                          "DMG01": "D8",
+                          "DMG02": "19740112",
+                          "DMG03": "M"
+                        }
+                      }
+                    },
+                    "Loop2010BB": {
+                      "NM1_PayerName": {
+                        "NM101": "PR",
+                        "NM102": "2",
+                        "NM103": "GEORGIA FAMILIES",
+                        "NM108": "PI",
+                        "NM109": "77034"
+                      },
+                      "N4_PayerName": {
+                        "N401": "TUCKER",
+                        "N402": "GA",
+                        "N403": "300855201"
+                      },
+                      "AllREF": {
+                        "REF_BillingProviderSecondaryIdentification": [
+                          {
+                            "REF01": "G2",
+                            "REF02": "KA6663"
+                          }
+                        ]
+                      }
+                    },
+                    "Loop2000C": [
+                      {
+                        "HL_PatientHierarchicalLevel": {
+                          "HL01": "3",
+                          "HL02": "2",
+                          "HL03": "23",
+                          "HL04": "0"
+                        },
+                        "PAT_PatientInformation": {
+                          "PAT01": "21"
+                        },
+                        "Loop2010CA": {
+                          "NM1_PatientName": {
+                            "NM101": "QC",
+                            "NM102": "1",
+                            "NM103": "SMITH",
+                            "NM104": "TED"
+                          },
+                          "N3_PatientAddress": {
+                            "N301": "236 N MAIN ST"
+                          },
+                          "N4_PatientCity_State_ZIPCode": {
+                            "N401": "MIAMI",
+                            "N402": "FL",
+                            "N403": "33413"
+                          },
+                          "DMG_PatientDemographicInformation": {
+                            "DMG01": "D8",
+                            "DMG02": "19730501",
+                            "DMG03": "M"
+                          }
+                        },
+                        "Loop2300": [
+                          {
+                            "CLM_ClaimInformation": {
+                              "CLM01": "2223254003792",
+                              "CLM02": "292.32",
+                              "HealthCareServiceLocationInformation_05": {
+                                "CLM05-1": "11",
+                                "CLM05-2": "B",
+                                "CLM05-03": "1"
+                              },
+                              "CLM09": "Y",
+                              "CLM10": "A",
+                              "CLM11": "Y",
+                              "CLM12": "I"
+                            },
+                            "AllREF": {
+                               "REF_Referral Number": {
+                                "REF01": "9F",
+                                "REF02": "17312345600006351"
+                              },
+							  "REF_PriorAuthorization": {
+                                "REF01": "G1",
+                                "REF02": "900019507620"
+                              },
+							  "REF_PayerClaimCOntrolNumber": {
+                                "REF01": "F8",
+                                "REF02": "1456823987456"
+                              },
+							  "REF_ClaimIdentifierForTransmissionIntermediaries": {
+                                "REF01": "9F",
+                                "REF02": "17312345600006351235"
+                              }
+                            },
+                            "AllHI": {
+                              "HI_HealthCareDiagnosisCode": {
+                                "HealthCareCodeInformation_01": {
+                                  "HI01-1": "ABK",
+                                  "HI01-2": "0340"
+                                },
+                                "HealthCareIndustryCode_02": {
+                                  "HI02-1": "ABF",
+                                  "HI02-2": "V7389"
+                                }
+                              }
+							},
+							
+                              "Loop2310A": {
+                                                        "NM1_ReferringProviderName": {
+                                                            "NM101": "DN",
+                                                            "NM108": "XX",
+                                                            "NM109": "9876543210"
+														}
+                                                    },
+                              "Loop2310B": {
+                                                        "NM1_RenderingProviderName": {
+                                                            "NM101": "",
+                                                            "NM108": "XX",
+                                                            "NM109": "9876543280"
+                                                        },		
+                                                        "PRV_RenderingProviderSpecialtyInformation": {
+                                                            "PRV01": "AT",
+                                                            "PRV02": "PXC",
+                                                            "PRV03": "453088947A" 
+                                                        }
+									 },	
+									  "Loop2320": {
+                                           "AMT_COB PayerPaidAMount": {
+                                                            "AMT01": "D",
+                                                            "AMT02": "292.32"
+														}
+                                                    },
+							 "Loop2330B": {
+                                  "AllDTP": {
+                                            "DTP_RemittanceDate": {
+                                                    "DTP01": "573",
+                                                     "DTP02": "D8",
+                                                     "DTP03": "20230918"
+                                   }
+							   }
+                            },							
+                            "Loop2400": [
+                              {
+                                "LX_ServiceLineNumber": {
+                                  "LX01": "1"
+                                },
+                                "SV1_ProfessionalService": {
+                                  "CompositeMedicalProcedureIdentifier_01": {
+                                    "SV101-1": "HC",
+                                    "SV101-2": "H2017"
+                                  },
+                                  "SV102": "146.16",
+                                  "SV103": "UN",
+                                  "SV104": "6.0",
+                                  "SV105": "12",
+                                  "CompositeDiagnosisCodePointer_07": {
+                                    "SV107": "1"
+                                  },
+                                  "SV109": "N",
+                                  "SV112": "Y"
+                                },
+                                "SV5_DMEdetails": {
+                                  "CompositeMedicalProcedureIdentifier_01": {
+                                    "SV105-1": "HC",
+                                    "SV105-2": "H2017"
+                                  }
+                                },
+                                "AllDTP": {
+                                  "DTP_Date_ServiceDate": {
+                                    "DTP01": "472",
+                                    "DTP02": "D8",
+                                    "DTP03": "20230903"
+                                  }
+                                }
+							  },
+      
+                              {
+                                "LX_ServiceLineNumber": {
+                                  "LX01": "2"
+                                },
+                                "SV1_ProfessionalService": {
+                                  "CompositeMedicalProcedureIdentifier_01": {
+                                    "SV101-1": "HC",
+                                    "SV101-2": "H0004"
+                                  },
+                                  "SV102": "146.16",
+                                  "SV103": "UN",
+                                  "SV104": "6.0",
+                                  "SV105": "12",
+                                  "CompositeDiagnosisCodePointer_07": {
+                                    "SV107-1": "1"
+                                  },
+                                  "SV109": "N",
+                                  "SV112": "Y"
+                                },
+                                "SV5_DMEdetails": {
+                                  "CompositeMedicalProcedureIdentifier_01": {
+                                    "SV105-1": "HC",
+                                    "SV105-2": "H0004"
+                                  }
+                                },
+                                "AllDTP": {
+                                  "DTP_Date_ServiceDate": {
+                                    "DTP01": "472",
+                                    "DTP02": "D8",
+                                    "DTP03": "20230903"
+                                  }
+                                }
+                              },
+                              {
+                              "Loop2410": {
+                                "LIN_DrugIdentification": {
+                                  "LIN03": "123456789012"
+                                },
+                                "CTP_DrugQuantity": {
+                                  "CTP04": "100",
+                                  "CTP05": "EA"
+                                }
+                              }
+							  },
+                        
+                              { 
+                              "Loop2420A": {
+								  "_comment": " Required if the Rendering Provider NM1 information is different than that carried in the 2310B (claim) loop, or if the Rendering provider information is different than the Billing Provider (2010AA)",               
+								  "NM1_RenderingProviderName": {
+                                   "NM109": "Rendering Provider Identifier"
+                                }
+                              },
+                          
+                              "Loop2420E": {
+								   "_comment": "OrderingProviderDeatils",
+                                "NM1_OrderingProvider": {
+                                  "NM104": "Doe, John M"
+                                },
+                                "REF_OrderingProviderSecondaryIdentification": {
+                                  "REF02": "1234567890"
+                                }
+                              },
+                              "Loop2420F": {
+								"_comment": "Required if service line involves a referral and the referring provider is different than reported in 2310A.",
+                                "NM1_ReferringProviderName": {
+                                  "NM109": "Referring Provider Identifier",
+                                  "NM103": "Provider Last Name",
+                                  "NM104": "Provider First Name",
+                                  "NM105": "Provider Middle Name",
+								  "NM108": "XX"
+                                }
+                              },
+                              "Loop2430": {
+                                       "SVD_ServiceLinePaidAmount": {
+                                          "SVD01": "7865334256",
+                                          "SVD02": "292.32"
+									      },
+                                          "ClaimLevelAdjustments": {
+                                           "CAS": ""
+										  },
+										  "RemittanceDate": { 
+										    "DTP01": "573",
+                                            "DTP02": "D8",
+                                            "DTP03": "20230903"
+										  }
+							  }
+						   }
+                           ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "SE": {
+              "SE01": "42",
+              "SE02": "000000001"
+            }
+          }
+        ],
+        "GE": [
+          {
+            "GE01": "1",
+            "GE02": "1"
+          }
+        ]
+      }
+    ],
+    "IEA": [
+      {
+        "IEA01": "1",
+        "IEA02": "000000001"
+      }
+    ]
+  }
+]
