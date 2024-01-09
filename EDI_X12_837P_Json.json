@@ -79,7 +79,7 @@
               {
                 "HL_BillingProviderHierarchicalLevel": {
                   "HL01": "1",
-                  "HL03": "20",
+                  "HL02": "20",
                   "HL03": "1"
                 },
                 "PRV_BillingProviderSpecialtyInformation": {
