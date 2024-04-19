@@ -416,7 +416,7 @@ public class EDIx12Lambda implements RequestHandler<APIGatewayProxyRequestEvent,
 
         } catch (Exception e) {
         //    logger.error("Error converting JSON to EDI 837P: {}", e.getMessage());
-            return "Error converting JSON to EDI 837P";
+            return "Error converting JSON to EDI 837P"; // Returning the Exceptions 
         }
         finally {
             // Reset the globalEdiBuilder after processing the request
@@ -1014,7 +1014,7 @@ public class EDIx12Lambda implements RequestHandler<APIGatewayProxyRequestEvent,
         //return ediBuilder.toString();
     } catch (Exception e) {
   //      logger.error("Error converting JSON to EDI 837I: {}", e.getMessage());
-        return "Error converting JSON to EDI 837I";
+        return "Error converting JSON to EDI 837I"; // Returning the Expception 
     }
     finally {
         // Reset the globalEdiBuilder after processing the request
@@ -1032,7 +1032,7 @@ public class EDIx12Lambda implements RequestHandler<APIGatewayProxyRequestEvent,
         // Append the segment to the global EDI builder
           segmentBuilder.append(SEGMENT_DELIMITER);
           //globalEdiBuilder.append(segmentBuilder);
-          appendToGlobalVariable(segmentBuilder.toString());
+          appendToGlobalVariable(segmentBuilder.toString()); 
       }
 
       private void appendFieldValues (StringBuilder segmentBuilder, JsonNode node){
@@ -1045,7 +1045,7 @@ public class EDIx12Lambda implements RequestHandler<APIGatewayProxyRequestEvent,
         }
       }
       private void resetGlobalEdiBuilder() {
-    	    // Reset the globalEdiBuilder after processing the request
+    	    // Reset the globalEdiBuilder after processing the request to 0
     	    globalEdiBuilder.setLength(0);
     	}
       
